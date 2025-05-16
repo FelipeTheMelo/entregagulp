@@ -24,7 +24,7 @@ const paths = {
 function compilarSass() {
     return gulp.src(paths.scss.src)
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS()) // minifica o CSS
+    .pipe(cleanCSS())
     .pipe(gulp.dest(paths.scss.dest));
 }
 
